@@ -222,3 +222,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.goo.version=$(shell date -u +%Y%m%d) \
   ro.goo.board=$(CM_BUILD)$(CM_EXTRAVERSION)
   
+-include $(WORKSPACE)/hudson/image-auto-bits.mk
