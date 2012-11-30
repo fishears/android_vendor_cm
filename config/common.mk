@@ -51,7 +51,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=cyanogenmodnightly
 else
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=cyanogenmod
+    ro.rommanager.developerid=fishears
 endif
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -100,7 +100,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
+    vendor/cm/proprietary/goomanager.apk:system/app/goomanager.apk
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
@@ -203,7 +204,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := UNOFFICIAL
+    CM_BUILDTYPE := FISHEARS
     CM_EXTRAVERSION :=
 endif
 
@@ -215,7 +216,9 @@ endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
-  ro.modversion=$(CM_VERSION)
-
-
--include $(WORKSPACE)/hudson/image-auto-bits.mk
+  ro.modversion=$(CM_VERSION) \
+  ro.goo.developerid=fishears \
+  ro.goo.rom=$$(CM_BUILDTYPE) \
+  ro.goo.version=$(shell date -u +%Y%m%d) \
+  ro.goo.board=$(CM_BUILD)$(CM_EXTRAVERSION)
+  
