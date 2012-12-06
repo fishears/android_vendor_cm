@@ -219,6 +219,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(CM_VERSION) \
   ro.goo.developerid=fishears \
   ro.goo.rom=$$(CM_BUILDTYPE) \
-  ro.goo.version=$(shell date -u +%Y%m%d) \
+  ro.goo.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d) \
   ro.goo.board=$(CM_BUILD)$(CM_EXTRAVERSION)
   
