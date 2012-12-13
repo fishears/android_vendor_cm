@@ -222,8 +222,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION) \
   ro.goo.developerid=fishears \
-  ro.goo.rom=$$(CM_BUILDTYPE) \
-  ro.goo.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d) \
+  ro.goo.rom=$(CM_BUILDTYPE)II \
+  ro.goo.version=$(shell date -u +%Y%m%d) \
   ro.goo.board=$(CM_BUILD)$(CM_EXTRAVERSION)
   
 -include $(WORKSPACE)/hudson/image-auto-bits.mk
