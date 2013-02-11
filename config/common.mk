@@ -84,9 +84,7 @@ PRODUCT_COPY_FILES += \
 
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
-    vendor/cm/prebuilt/common/etc/init.d/read_ahead:system/etc/init.d/read_ahead
-    
+    vendor/cm/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit    
 
 # CM-specific init file
 PRODUCT_COPY_FILES += \
