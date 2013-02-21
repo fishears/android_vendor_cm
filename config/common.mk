@@ -183,7 +183,7 @@ PRODUCT_VERSION_MINOR = 1
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
 # Set CM_BUILDTYPE
-    CM_BUILDTYPE := FISHEARS
+    CM_BUILDTYPE := FISHEARS-LVM
     CM_EXTRAVERSION :=
 
 ifdef CM_RELEASE
@@ -200,7 +200,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION) \
   ro.goo.developerid=fishears \
-  ro.goo.rom=$(CM_BUILDTYPE)II \
+  ro.goo.rom=$(CM_BUILDTYPE)III \
   ro.goo.version=$(shell date -u +%Y%m%d) \
   ro.goo.board=$(CM_BUILD)$(CM_EXTRAVERSION)
   
