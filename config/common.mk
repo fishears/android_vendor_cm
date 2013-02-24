@@ -97,8 +97,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
 vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
-    vendor/cm/proprietary/goomanager.apk:system/app/goomanager.apk \
-    vendor/cm/proprietary/nstools.apk:system/app/nstools.apk
+    vendor/cm/proprietary/goomanager.apk:system/app/goomanager.apk
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
@@ -146,7 +145,8 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     Apollo \
     CMFileManager \
-    LockClock
+    LockClock \
+    NSTools
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
