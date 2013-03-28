@@ -153,6 +153,9 @@ PRODUCT_PACKAGES += \
     LockClock \
     NSTools
 
+PRODUCT_PACKAGES += \
+    CellBroadcastReceiver
+
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
