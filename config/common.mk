@@ -204,7 +204,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := FISHEARS
+    CM_BUILDTYPE := FISHEARS-LVM
     CM_EXTRAVERSION :=
 endif
 
@@ -218,7 +218,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION) \
   ro.goo.developerid=fishears \
-  ro.goo.rom=$(CM_BUILDTYPE)I \
+  ro.goo.rom=$(CM_BUILDTYPE)IV \
   ro.goo.version=$(shell date -u +%Y%m%d) \
   ro.goo.board=$(CM_BUILD)$(CM_EXTRAVERSION)
   
