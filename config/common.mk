@@ -100,7 +100,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
+	vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
     vendor/cm/proprietary/goomanager.apk:system/app/goomanager.apk
 
 # Bring in camera effects
@@ -134,7 +134,6 @@ PRODUCT_PACKAGES += \
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    VideoEditor \
     VoiceDialer \
     SoundRecorder \
     Basic
@@ -147,8 +146,9 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     CMWallpapers \
     Apollo \
-    CMUpdater \
-    CMFileManager
+    CMFileManager \
+    LockClock \
+    NSTools
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
