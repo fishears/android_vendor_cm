@@ -147,6 +147,7 @@ PRODUCT_PACKAGES += \
     CMWallpapers \
     Apollo \
     CMFileManager \
+    CMUpdater \
     LockClock \
     NSTools
 
